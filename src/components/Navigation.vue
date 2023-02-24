@@ -1,10 +1,10 @@
 <template>
     <nav>
         <!-- Title  -->
-        <h1> Legends of Awesomeness! </h1>
+        <h1> Legends of Awesomeness! from Navigation</h1> </nav>
         <!-- image -->
-        <img v-show="isAdmin" src="../assets/budhaa.jpg" alt="profile photo" class="budhaa" srcset="">
-        <!-- routes -->
+        <!-- <img v-show="isAdmin" src="../assets/budhaa.jpg" alt="profile photo" class="budhaa" srcset="">
+          routes -- 
         <ul>
             <li>home</li>
             <li>about me </li>
@@ -20,24 +20,25 @@
         </ul>
         <button @click="switchName('Kamau wa Kale')"> switch name </button>
         <button @click="reverseName(userName)"> reverse name </button>
-    </nav>
+    </nav> -->
 
-    <div class="userdetails">
+    <!-- <div class="userdetails">
         <label>
             Alias :
         </label>
         <input type="text" v-model="targetName">
     </div>
-    <div> {{ targetName }}</div>
+    <div> {{ targetName }}</div> -->
     <!--  v-for directive -->
-    <div>
+    <!-- <div>
         <ul v-for="(car, platenumber) in cars" :key="platenumber">
+            <div @mouseenter="dispalayIndex(index)"> <span v-show="display==index"> {{ index }}</span> {{ skill }}</div> 
             <li> BRAND : {{ car.brand }} | PLATE# : {{ car.platenumber }} | YOM : {{ car.year }}</li>
         </ul>
 
-        </div>
+        </div> -->
         <!-- mouse over and mousleave -->
-        <button @mouseover="changeButtonNameOnHover()" @mouseleave="changeButtonNameOnLeaveHover">{{buttonName}}</button>
+        <!-- <button @mouseover="changeButtonNameOnHover()" @mouseleave="changeButtonNameOnLeaveHover">{{buttonName}}</button> -->
         <!-- <div> <button class="submit_details" @click="getAliasName(targeName)">submit details</button>
         </div> -->
 </template>
@@ -59,6 +60,7 @@ export default {
                 { brand: 'volvo', year: 2016, platenumber: "KMY 004Y" },]
         }
     },
+    computed:{},
     methods: {
         switchName(name) {
             this.userName = name

@@ -1,11 +1,12 @@
 <template> 
- <Navigation/>
+ <ComputedLesson/>
 </template>
 
 
 
 <script setup> 
- import Navigation from "./components/Naviagtion.vue"
+import ComputedLesson from './components/ComputedLesson.vue'
+ import Navigation from "./components/Navigation.vue"
 </script>
 
 
