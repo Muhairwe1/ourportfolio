@@ -1,9 +1,9 @@
 <template>
-  <Viewwork />
+  <Navigation />
 </template>
 
 <script setup>
-import Viewwork from "./components/Viewwork.vue"
+import Navigation from "./components/Navigation.vue"
 </script>
 
 <style scoped></style>
