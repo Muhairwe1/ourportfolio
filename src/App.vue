@@ -1,14 +1,17 @@
 <script setup>
-import IntroComponent from './components/IntroComponent.vue';
+import navComponent from './components/navComponent.vue';
+import introComponent  from './components/introComponent.vue';
+
 
 
 </script>
 
 <template>
-  <div class="intro">
-    <p>
-        <IntroComponent/>
-    </p>
+  <div>
+       <navComponent/>
+  </div>
+  <div>
+       <introComponent/>
   </div>
     
   
