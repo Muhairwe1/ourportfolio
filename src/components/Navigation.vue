@@ -16,7 +16,7 @@
         <div class="routes">
             <router-link to="/" class="nav-item">home</router-link>
             <router-link to="/about" class="nav-item">about</router-link>
-            <router-link to="/contact" class="nav-item">contact</router-link>
+            <router-link to="/contact-me" class="nav-item">contact</router-link>
             <router-link to="/my-work" class="nav-item" id="view-work">view work</router-link>
         </div>
         <!-- view work button -->
