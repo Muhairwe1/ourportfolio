@@ -3,6 +3,7 @@
     - enable page routing
     - display logo 
     - display "viewwork" button   
+
 -->
 
     <nav>
@@ -12,7 +13,7 @@
             <!-- icon + name -->
             <img src="../assets/logo.svg" alt="my logo" srcset="">
             
-              <!-- mouse over and mousleave -->
+              <!-- mouse over and mous leave -->
               
             <div class="trigger" @mouseenter="activeHover = true" @mouseleave="activeHover = false" >
                 <p v-if="activeHover"> Our Portfolio </p>
