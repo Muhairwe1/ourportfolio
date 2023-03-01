@@ -6,12 +6,19 @@
 -->
 
     <nav>
+        
         <!-- logo -->
         <div class="logo">
             <!-- icon + name -->
             <img src="../assets/logo.svg" alt="my logo" srcset="">
-            <div id="username">{{ username }}</div>
-        </div>
+            
+              <!-- mouse over and mousleave -->
+              
+            <div class="trigger" @mouseenter="activeHover = true" @mouseleave="activeHover = false" >
+                <p v-if="activeHover"> Our Portfolio </p>
+                <p v-if ="!activeHover"> <div id="username">{{ username }}</div> </p>
+            </div>
+     </div>
         <!-- routes -->
         <div class="routes">
             <router-link to="/" class="nav-item">home</router-link>
@@ -26,11 +33,11 @@
 export default {
     data() {
         return {
-            username: "Wa Kamau"
+            username: "Wa Kamau",
+            activeHover : false
         }
     }
 }
-
 </script>
 <style scoped>
 nav {
@@ -46,16 +53,13 @@ nav {
     height: 64px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
 }
-
 .logo {
     display: flex;
     position: absolute;
     margin-left: 100px;
     left: 0;
 }
-
 #username { 
     margin-top: 20px;
     margin-bottom: 16px; 
@@ -63,7 +67,6 @@ nav {
     font-size: 14px;
     color: rgb(81, 81, 81);
 }
-
 .routes {
     position: absolute;
     margin-top: 16px;
@@ -72,7 +75,6 @@ nav {
     margin-right: 100px;
     right: 0 !important;  
 }
-
 .nav-item {
     margin-left: 10px;
     margin-right: 10px;
@@ -93,4 +95,7 @@ nav {
     text-decoration: none;
     font-weight:normal;
 }
+.trigger{
+    background: "#ffffff";
+  }
 </style>
